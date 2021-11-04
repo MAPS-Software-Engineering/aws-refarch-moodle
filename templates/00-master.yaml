@@ -931,8 +931,7 @@ Resources:
           !GetAtt [ vpc, Outputs.DataSubnet ]
         NumberOfSubnets:
           !Ref NumberOfAZs
-      TemplateURL: https://s3.amazonaws.com/aws-refarch/moodle/latest/templates/03-rds.yaml
-  efsfilesystem:
+      TemplateURL: https://raw.githubusercontent.com/MAPS-Software-Engineering/aws-refarch-moodle/master/templates/03-rds.yaml
     DependsOn: securitygroups
     Type: AWS::CloudFormation::Stack
     Properties:
